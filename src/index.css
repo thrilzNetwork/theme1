@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-maze-bg: #050505;
+  --color-maze-text: #EFF0F0;
+  --color-maze-muted: #83919B;
+  --color-maze-accent: #22D0DF;
+  --color-maze-red: #E42269;
+  --color-maze-green: #2FD48D;
+  --color-maze-border: rgba(131, 145, 155, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-maze-bg text-maze-text font-sans selection:bg-maze-accent selection:text-maze-bg;
+  }
+}
+
+@layer utilities {
+  .dotted-line {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+  
+  .dotted-border {
+    border-style: dotted;
+    border-width: 1px;
+    border-image: radial-gradient(circle, #83919B 1px, transparent 1px) 1;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.glow-mesh {
+  background: radial-gradient(circle at 50% 50%, rgba(34, 208, 223, 0.15) 0%, transparent 50%);
+}

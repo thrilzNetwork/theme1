@@ -1,0 +1,5 @@
+{
+  "name": "Maze - Agentic AI for Vulnerability Management",
+  "description": "A recreation of the Maze security platform website, featuring AI agents for cloud vulnerability investigation and remediation.",
+  "requestFramePermissions": []
+}
