@@ -2,16 +2,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Roobert", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  --color-maze-bg: #050505;
-  --color-maze-text: #EFF0F0;
-  --color-maze-muted: #83919B;
+  --color-maze-bg: #0F1523;
+  --color-maze-text: #D6D8D8;
+  --color-maze-muted: #7A8899;
   --color-maze-accent: #22D0DF;
   --color-maze-red: #E42269;
   --color-maze-green: #2FD48D;
-  --color-maze-border: rgba(131, 145, 155, 0.2);
+  --color-maze-border: rgba(214, 216, 216, 0.08);
 }
 
 @layer base {

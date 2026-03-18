@@ -3,8 +3,8 @@ import { Button } from "./UI";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full z-50 bg-maze-bg/85 backdrop-blur-md border-b border-maze-border">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-12">
           <a href="/" className="flex items-center gap-2">
             <svg className="w-24 h-auto text-white" viewBox="0 0 98 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ export const Header = () => {
           </a>
           <nav className="hidden md:flex items-center gap-10">
             {["Product", "Solutions", "Resources", "Company"].map((item) => (
-              <a key={item} href={`/${item.toLowerCase()}`} className="text-sm font-medium text-[#83919B] hover:text-white transition-colors flex items-center gap-1">
+              <a key={item} href={`/${item.toLowerCase()}`} className="text-sm font-medium text-maze-muted hover:text-white transition-colors flex items-center gap-1">
                 {item}
                 <svg className="w-2 h-2 opacity-50" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L4 4L7 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -24,7 +24,7 @@ export const Header = () => {
           </nav>
         </div>
         <div className="flex items-center gap-8">
-          <a href="/login" className="text-sm font-medium text-[#83919B] hover:text-white transition-colors">
+          <a href="/login" className="text-sm font-medium text-maze-muted hover:text-white transition-colors">
             Login
           </a>
           <Button variant="primary" className="px-6 py-2.5 text-sm">

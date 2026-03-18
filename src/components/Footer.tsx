@@ -3,7 +3,7 @@ import { Button } from "./UI";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#050505] border-t border-white/5 pt-32 pb-16">
+    <footer className="bg-maze-bg border-t border-white/5 pt-32 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-32 gap-12">
           <h2 className="text-4xl md:text-6xl font-medium max-w-2xl leading-[1.1] text-white">

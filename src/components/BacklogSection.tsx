@@ -3,7 +3,7 @@ import { Badge, DottedLine } from "./UI";
 
 export const BacklogSection = () => {
   return (
-    <section className="py-32 bg-[#050505]">
+    <section className="py-32 bg-maze-bg">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-20">
         <div className="md:col-span-5">
           <div className="sticky top-32">

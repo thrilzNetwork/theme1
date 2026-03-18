@@ -3,7 +3,7 @@ import { Badge, DottedLine, DottedPlus } from "./UI";
 
 export const FlowDiagram = () => {
   return (
-    <section className="py-32 bg-[#050505] relative overflow-hidden">
+    <section className="py-32 bg-maze-bg relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-medium mb-8 max-w-4xl mx-auto leading-[1.15]">
@@ -131,7 +131,7 @@ export const FlowDiagram = () => {
                 </div>
                 
                 {/* Floating Detail Popups */}
-                <div className="absolute -top-12 -right-8 p-3 bg-[#050505] border border-white/10 rounded-lg shadow-2xl animate-bounce">
+                <div className="absolute -top-12 -right-8 p-3 bg-maze-bg border border-white/10 rounded-lg shadow-2xl animate-bounce">
                   <div className="text-[8px] uppercase text-[#83919B] mb-1">Requirement</div>
                   <div className="text-[10px] font-medium">KDC Server Running</div>
                   <div className="text-[10px] text-[#E42269]">Not present</div>
